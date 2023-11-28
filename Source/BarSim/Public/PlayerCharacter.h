@@ -74,6 +74,10 @@ public:
 	void CheckDroppedObjectRight();
 	UFUNCTION(BlueprintCallable)
 	void CheckDroppedObjectLeft();
+	UFUNCTION(BlueprintCallable)
+	void DestroyDroppedObjectRight();
+	UFUNCTION(BlueprintCallable)
+	void DestroyDroppedObjectLeft();
 	void FireRight();
 	void FireLeft();
 	void FireReleasedRight();
@@ -82,6 +86,8 @@ public:
 	void ShowGuideWidget();
 	void HideGuideWidget();
 	void TestInputKey();
+	UFUNCTION(BlueprintImplementableEvent)
+	void ResetGraspingHands();
 
 	// Grabbing Boolean
 	bool IsGrabbedLeft = false;
